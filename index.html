@@ -3,19 +3,819 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TARUN SHARMA // GAME DEVELOPER [1P]</title>
+    <meta name="description" content="Retro Game Developer Portfolio of Tarun Sharma - Gameplay Programmer specializing in Godot Engine (2D/3D), GDScript, C++, OpenGL and Game Physics.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220%200%20100%20100%22><text y=%22.9em%22 font-size=%2290%22>👾</text></svg>">
 </head>
-<link rel="stylesheet" href="style.css">
 <body>
-    
-    <div id="menu">
-        <h1>Hello there,</h1>
-        <div><p>I am Tarun Sharma, a Bachelor of Technology student in Computer Science at MIT Academy of Engineering, Alandi. </p></div>
-        <button><a href="aboutme.html">About me</a></button>
-        <button><a href="bio.html">Bio Data</a></button>
-        <button><a href="projects.html">Projects</a></button>
-        <button><a href="contact.html">contact</a></button>
+
+    <!-- Retro Pixel Starfield Background -->
+    <canvas id="bg-canvas"></canvas>
+
+    <div class="site-content">
+        <!-- ===================================================
+             PIXEL HUD NAVIGATION
+             =================================================== -->
+        <header class="hud-nav">
+            <div class="nav-container">
+                <a href="#hero" class="brand-badge">
+                    <div class="brand-icon">👾</div>
+                    <div class="brand-text">
+                        <span class="brand-name">TARUN SHARMA</span>
+                        <span class="brand-title">LVL 20 GAME DEVELOPER</span>
+                    </div>
+                </a>
+
+                <ul class="nav-links">
+                    <li><a href="#showcase">[GAMES]</a></li>
+                    <li><a href="#arsenal">[ARSENAL]</a></li>
+                    <li><a href="#journey">[QUESTS]</a></li>
+                    <li><a href="#about">[ABOUT]</a></li>
+                    <li><a href="#contact">[CONTACT]</a></li>
+                </ul>
+
+                <div class="nav-actions">
+                    <button class="sound-toggle-btn" id="sound-toggle" title="Toggle 8-bit Audio">AUDIO: ON</button>
+                    <a href="Tarun_Sharma.pdf" target="_blank" class="nav-cta">
+                        <span>📜 RESUME.PDF</span>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- ===================================================
+             HERO SECTION - RETRO ARCADE / RPG
+             =================================================== -->
+        <section id="hero" class="hero">
+            <div class="container">
+                <div class="hero-grid">
+                    <div class="hero-content">
+                        <div class="arcade-badge">
+                            <span class="blinking-star">★</span>
+                            <span class="arcade-badge-text">STATUS: READY TO JOIN GAME STUDIO / INTERNSHIP</span>
+                        </div>
+                        
+                        <h1 class="hero-title">
+                            GAMEPLAY PROGRAMMER <br>
+                            <span class="highlight-pixel-yellow">&amp; INDIE</span> <span class="highlight-pixel-cyan">DEV</span>
+                        </h1>
+                        
+                        <!-- Retro Dialogue Box -->
+                        <div class="dialogue-box">
+                            <span class="dialogue-speaker">TARUN.TXT</span>
+                            <p class="hero-subtitle">
+                                > Specializing in Godot Engine (2D/3D), GDScript, C++, and Custom Game Physics.
+                            </p>
+                            <p class="hero-desc">
+                                2nd-year B.Tech CSE student at MIT Academy of Engineering, Pune. Passionate about crafting tight controls, kinetic hit-feedback, vehicle suspension, and OpenGL rendering pipelines.
+                            </p>
+                        </div>
+
+                        <!-- RPG Character Stat HUD -->
+                        <div class="hud-stat-bars">
+                            <div class="stat-row">
+                                <span class="stat-label">GODOT</span>
+                                <div class="stat-bar-container">
+                                    <div class="stat-bar-fill" style="width: 92%; --fill-color: var(--pixel-green);"></div>
+                                </div>
+                                <span class="stat-val">92/100</span>
+                            </div>
+                            <div class="stat-row">
+                                <span class="stat-label">GDSCRIPT</span>
+                                <div class="stat-bar-container">
+                                    <div class="stat-bar-fill" style="width: 90%; --fill-color: var(--pixel-cyan);"></div>
+                                </div>
+                                <span class="stat-val">90/100</span>
+                            </div>
+                            <div class="stat-row">
+                                <span class="stat-label">C++ / GL</span>
+                                <div class="stat-bar-container">
+                                    <div class="stat-bar-fill" style="width: 82%; --fill-color: var(--pixel-yellow);"></div>
+                                </div>
+                                <span class="stat-val">82/100</span>
+                            </div>
+                            <div class="stat-row">
+                                <span class="stat-label">PHYSICS</span>
+                                <div class="stat-bar-container">
+                                    <div class="stat-bar-fill" style="width: 88%; --fill-color: var(--pixel-pink);"></div>
+                                </div>
+                                <span class="stat-val">88/100</span>
+                            </div>
+                        </div>
+
+                        <div class="hero-actions">
+                            <a href="#showcase" class="btn-pixel-primary">
+                                <span>▶ PLAY GAMES</span>
+                            </a>
+                            <a href="https://tarun114141.itch.io" target="_blank" rel="noopener noreferrer" class="btn-pixel-secondary">
+                                <span>⚡ ITCH.IO</span>
+                            </a>
+                            <a href="https://github.com/tarun114141" target="_blank" rel="noopener noreferrer" class="btn-pixel-secondary">
+                                <span>💻 GITHUB</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Character Portrait Frame (Player 1) -->
+                    <div class="hero-visual">
+                        <div class="character-card">
+                            <div class="character-header-tag">★ PLAYER 1 ★</div>
+                            
+                            <div class="character-img-frame">
+                                <img src="tarun_profile.jpg" alt="Tarun Sharma - Game Developer">
+                            </div>
+                            
+                            <div class="character-info-panel">
+                                <div class="info-line">
+                                    <span class="label">NAME:</span>
+                                    <span class="value">TARUN SHARMA</span>
+                                </div>
+                                <div class="info-line">
+                                    <span class="label">CLASS:</span>
+                                    <span class="value">GAME DEV</span>
+                                </div>
+                                <div class="info-line">
+                                    <span class="label">LOC:</span>
+                                    <span class="value">PUNE, INDIA</span>
+                                </div>
+                                <div class="info-line">
+                                    <span class="label">STATUS:</span>
+                                    <span class="value" style="color: var(--pixel-green);">READY</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================================================
+             GAME SHOWCASE (WORLD MAP / QUESTS)
+             =================================================== -->
+        <section id="showcase" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-pretitle">// STAGE SELECT</span>
+                    <h2 class="section-title">FEATURED GAME PROJECTS</h2>
+                    <p class="section-description">
+                        Solo and collaborative games built in Godot Engine and OpenGL. Tested for game feel, tight mechanics, and performant loops.
+                    </p>
+                </div>
+
+                <!-- Retro Filter Bar -->
+                <div class="filter-container">
+                    <button class="filter-btn active" data-filter="all">[ALL QUESTS (9)]</button>
+                    <button class="filter-btn" data-filter="playable">[PLAYABLE ON ITCH.IO]</button>
+                    <button class="filter-btn" data-filter="godot3d">[GODOT 3D &amp; PHYSICS]</button>
+                    <button class="filter-btn" data-filter="2d">[2D ACTION &amp; ARCADE]</button>
+                    <button class="filter-btn" data-filter="opengl">[OPENGL GRAPHICS]</button>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="projects-grid">
+
+                    <!-- 1. Knight's Adventure -->
+                    <div class="project-card" data-category="playable 2d">
+                        <div class="project-banner">
+                            <img src="Knights_adventure.gif" alt="Knight's Adventure Gameplay Loop" class="project-banner-img">
+                            <span class="project-status status-complete">COMPLETE</span>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-tags">
+                                <span class="tag tag-engine">GODOT 2D</span>
+                                <span class="tag">GDSCRIPT</span>
+                                <span class="tag">BRACKEYS</span>
+                            </div>
+                            <h3 class="project-title">KNIGHT'S ADVENTURE</h3>
+                            <p class="project-desc">
+                                Classic 2D adventure platformer built in Godot Engine. Serves as the foundational cornerstone for mastering tilemaps, physics-based character movement, coyote time, and game feel.
+                            </p>
+                            <div class="project-mechanics">
+                                <span class="mechanics-label">// MECHANICS</span>
+                                <span class="mechanics-text">Jump buffering, coyote time, animated sprite states, collectible coin counters, and audio triggers.</span>
+                            </div>
+                            <div class="project-footer">
+                                <a href="https://tarun114141.itch.io/knights-adventure" target="_blank" rel="noopener noreferrer" class="btn-card-pixel btn-card-play">
+                                    ▶ PLAY ON ITCH.IO
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2. Car 3D -->
+                    <div class="project-card" data-category="godot3d">
+                        <div class="project-banner">
+                            <img src="car_3d.gif" alt="Car 3D Simulator Gameplay" class="project-banner-img">
+                            <span class="project-status status-dev">IN DEV</span>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-tags">
+                                <span class="tag tag-engine">GODOT 3D</span>
+                                <span class="tag">PHYSICS</span>
+                                <span class="tag">SUSPENSION</span>
+                            </div>
+                            <h3 class="project-title">CAR 3D SIMULATOR</h3>
+                            <p class="project-desc">
+                                An engineering research study into 3D vehicle physics and chassis dynamics in Godot. Implements raycast wheel suspension, tire traction, drift mechanics, and smooth follow-cameras.
+                            </p>
+                            <div class="project-mechanics">
+                                <span class="mechanics-label">// MECHANICS</span>
+                                <span class="mechanics-text">Raycast suspension springs, slip angles, center-of-mass balancing, and dynamic throttle curves.</span>
+                            </div>
+                            <div class="project-footer">
+                                <a href="https://github.com/tarun114141/Car_3d" target="_blank" rel="noopener noreferrer" class="btn-card-pixel btn-card-code">
+                                    ⚡ GITHUB REPO
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3. Mosi Flappy -->
+                    <div class="project-card" data-category="playable 2d">
+                        <div class="project-banner">
+                            <img src="Mosi_flappy.gif" alt="Mosi Flappy Gameplay Loop" class="project-banner-img">
+                            <span class="project-status status-complete">COMPLETE</span>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-tags">
+                                <span class="tag tag-engine">GODOT 2D</span>
+                                <span class="tag">ARCADE</span>
+                                <span class="tag">SATIRE</span>
+                            </div>
+                            <h3 class="project-title">MOSI FLAPPY</h3>
+                            <p class="project-desc">
+                                High-energy arcade flapper with satirical political caricatures. Engineered with tight vertical impulses, dynamic pipe gap spawning, parallax backgrounds, and persistent high scores.
+                            </p>
+                            <div class="project-mechanics">
+                                <span class="mechanics-label">// MECHANICS</span>
+                                <span class="mechanics-text">Discrete tap impulses, continuous gravity decay, random gap generation, and audio feedback loops.</span>
+                            </div>
+                            <div class="project-footer">
+                                <a href="https://tarun114141.itch.io/mosi-flappy" target="_blank" rel="noopener noreferrer" class="btn-card-pixel btn-card-play">
+                                    ▶ PLAY ON ITCH.IO
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 4. Codename: HorrorRamous -->
+                    <div class="project-card" data-category="2d">
+                        <div class="project-banner">
+                            <img src="HORRORRAMOUS.gif" alt="Codename HorrorRamous Gameplay" class="project-banner-img">
+                            <span class="project-status status-halt">PROTOTYPE</span>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-tags">
+                                <span class="tag tag-engine">GODOT 2D</span>
+                                <span class="tag">ISOMETRIC</span>
+                                <span class="tag">LIGHTING</span>
+                            </div>
+                            <h3 class="project-title">CODENAME: HORRORRAMOUS</h3>
+                            <p class="project-desc">
+                                2D top-down isometric survival horror prototype. Focuses on dynamic shadow occlusion, stealth mechanics, claustrophobic corridors, and tension pacing.
+                            </p>
+                            <div class="project-mechanics">
+                                <span class="mechanics-label">// MECHANICS</span>
+                                <span class="mechanics-text">Isometric coordinate projection, 2D light occluders, stealth field-of-view, and patrol AI.</span>
+                            </div>
+                            <div class="project-footer">
+                                <a href="https://github.com/tarun114141/Horror_Ramosus" target="_blank" rel="noopener noreferrer" class="btn-card-pixel btn-card-code">
+                                    ⚡ GITHUB REPO
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 5. Plat_1 -->
+                    <div class="project-card" data-category="playable 2d">
+                        <div class="project-banner">
+                            <img src="Plat_1.gif" alt="Plat_1 Gameplay Loop" class="project-banner-img">
+                            <span class="project-status status-testing">TESTING</span>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-tags">
+                                <span class="tag tag-engine">GODOT 2D</span>
+                                <span class="tag">COMBAT</span>
+                                <span class="tag">DASH MECHANIC</span>
+                            </div>
+                            <h3 class="project-title">PLAT_1 ACTION PLATFORMER</h3>
+                            <p class="project-desc">
+                                Fast-paced 2D action game testing fluid combat kinetics. Features aerial dashes, responsive hitboxes, attack combos, and screen-shake impact feedback.
+                            </p>
+                            <div class="project-mechanics">
+                                <span class="mechanics-label">// MECHANICS</span>
+                                <span class="mechanics-text">Hitstop freeze-frames, hurtbox collision triggers, variable velocity dashes, and enemy knockback.</span>
+                            </div>
+                            <div class="project-footer">
+                                <a href="https://tarun114141.itch.io/plat-1" target="_blank" rel="noopener noreferrer" class="btn-card-pixel btn-card-play">
+                                    ▶ PLAY ON ITCH.IO
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 6. Dot Connect Animation -->
+                    <div class="project-card" data-category="playable 2d">
+                        <div class="project-banner">
+                            <video class="project-banner-video" autoplay loop muted playsinline>
+                                <source src="dot_animation.mp4" type="video/mp4">
+                            </video>
+                            <span class="project-status status-complete">COMPLETE</span>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-tags">
+                                <span class="tag tag-engine">GODOT ENGINE</span>
+                                <span class="tag">MATH</span>
+                                <span class="tag">TWEENING</span>
+                            </div>
+                            <h3 class="project-title">DOT CONNECT ANIMATION</h3>
+                            <p class="project-desc">
+                                Procedural motion graphics and visual juice simulation in Godot. Demonstrates mathematical coordinate transformations, dynamic node linkages, and easing mathematics.
+                            </p>
+                            <div class="project-mechanics">
+                                <span class="mechanics-label">// MECHANICS</span>
+                                <span class="mechanics-text">Custom Tween chaining, procedural node drawing via _draw(), and vector proximity thresholding.</span>
+                            </div>
+                            <div class="project-footer">
+                                <a href="https://tarun114141.itch.io/dots-final" target="_blank" rel="noopener noreferrer" class="btn-card-pixel btn-card-play">
+                                    ▶ PLAY ON ITCH.IO
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 7. Pacman Animation -->
+                    <div class="project-card" data-category="opengl">
+                        <div class="project-banner">
+                            <svg class="project-banner-svg" viewBox="0 0 400 170" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="400" height="170" fill="#000000"/>
+                                <rect x="30" y="25" width="340" height="120" stroke="#0000ff" stroke-width="4" fill="none"/>
+                                <!-- Pixel Pacman -->
+                                <polygon points="120,60 170,85 120,110 100,85" fill="#ffe600"/>
+                                <!-- Pellets -->
+                                <rect x="200" y="82" width="8" height="8" fill="#ffffff"/>
+                                <rect x="240" y="82" width="8" height="8" fill="#ffffff"/>
+                                <rect x="280" y="82" width="8" height="8" fill="#ffffff"/>
+                                <rect x="320" y="82" width="8" height="8" fill="#ffffff"/>
+                                <text x="200" y="45" fill="#ffe600" font-family="'Press Start 2P', cursive" font-size="11" text-anchor="middle">OPENGL RASTER</text>
+                            </svg>
+                            <span class="project-status status-complete">COMPLETE</span>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-tags">
+                                <span class="tag tag-engine">OPENGL</span>
+                                <span class="tag">C++ / C</span>
+                                <span class="tag">GRAPHICS</span>
+                            </div>
+                            <h3 class="project-title">PACMAN OPENGL ANIMATION</h3>
+                            <p class="project-desc">
+                                Classic arcade animation built in C++ and OpenGL. Implements primitive rendering, frame buffer swapping, mouth angle oscillations, and 2D grid matrix mapping.
+                            </p>
+                            <div class="project-mechanics">
+                                <span class="mechanics-label">// MECHANICS</span>
+                                <span class="mechanics-text">OpenGL primitive rasterization, frame timing clocks, mouth interpolation, and color buffers.</span>
+                            </div>
+                            <div class="project-footer">
+                                <span class="tag" style="color: var(--pixel-yellow);">C++ &amp; OPENGL GRAPHICS</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 8. Project Maze -->
+                    <div class="project-card" data-category="opengl">
+                        <div class="project-banner">
+                            <video class="project-banner-video" autoplay loop muted playsinline>
+                                <source src="maze.mp4" type="video/mp4">
+                            </video>
+                            <span class="project-status status-complete">COMPLETE</span>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-tags">
+                                <span class="tag tag-engine">OPENGL</span>
+                                <span class="tag">DFS MAZE</span>
+                                <span class="tag">ALGORITHMS</span>
+                            </div>
+                            <h3 class="project-title">PROJECT MAZE VISUALIZER</h3>
+                            <p class="project-desc">
+                                Maze generation and visual traversal simulation rendered using the OpenGL graphics pipeline. Explores spatial generation algorithms (DFS/backtracking) and real-time vertex updates.
+                            </p>
+                            <div class="project-mechanics">
+                                <span class="mechanics-label">// MECHANICS</span>
+                                <span class="mechanics-text">Depth-First Search generation, coordinate projection matrices, wall boundary collision checks.</span>
+                            </div>
+                            <div class="project-footer">
+                                <a href="https://github.com/tarun114141/Project_maze" target="_blank" rel="noopener noreferrer" class="btn-card-pixel btn-card-code">
+                                    ⚡ GITHUB REPO
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 9. 3D Gun Game -->
+                    <div class="project-card" data-category="godot3d">
+                        <div class="project-banner">
+                            <svg class="project-banner-svg" viewBox="0 0 400 170" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="400" height="170" fill="#140404"/>
+                                <!-- Crosshair -->
+                                <rect x="195" y="45" width="10" height="80" fill="#ff3344"/>
+                                <rect x="160" y="80" width="80" height="10" fill="#ff3344"/>
+                                <rect x="190" y="75" width="20" height="20" fill="#ffe600"/>
+                                <!-- Sound Waves -->
+                                <polygon points="260,60 270,70 270,100 260,110" fill="#00f0ff"/>
+                                <polygon points="280,50 295,65 295,105 280,120" fill="#00f0ff"/>
+                                <text x="200" y="35" fill="#ff3344" font-family="'Press Start 2P', cursive" font-size="11" text-anchor="middle">3D AUDIO DESIGN</text>
+                            </svg>
+                            <span class="project-status status-dev">AUDIO LAB</span>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-tags">
+                                <span class="tag tag-engine">GODOT 3D</span>
+                                <span class="tag">AUDIO FOLEY</span>
+                                <span class="tag">BALLISTICS</span>
+                            </div>
+                            <h3 class="project-title">3D TACTICAL AUDIO DESIGN</h3>
+                            <p class="project-desc">
+                                Specialized study into positional 3D sound design and mechanical game feel in Godot 3D. Implements 3D audio attenuation curves, weapon foley, and raycast projectile impact feedback.
+                            </p>
+                            <div class="project-mechanics">
+                                <span class="mechanics-label">// MECHANICS</span>
+                                <span class="mechanics-text">AudioStreamPlayer3D bus effects, distance attenuation, occlusion dampening, and screen recoil kicks.</span>
+                            </div>
+                            <div class="project-footer">
+                                <span class="tag" style="color: var(--pixel-green);">SPATIAL AUDIO IN GODOT</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================================================
+             TECHNICAL ARSENAL & RUNES
+             =================================================== -->
+        <section id="arsenal" class="section" style="background: rgba(0, 0, 0, 0.4);">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-pretitle">// SKILL TREE</span>
+                    <h2 class="section-title">TECHNICAL ARSENAL &amp; RUNES</h2>
+                    <p class="section-description">
+                        Game engines, programming runes, and technical competencies leveled up through hands-on development.
+                    </p>
+                </div>
+
+                <div class="arsenal-grid">
+                    <!-- Card 1: Engines & Pipelines -->
+                    <div class="arsenal-card">
+                        <div class="arsenal-icon-header">
+                            <div class="arsenal-icon">⚙️</div>
+                            <h3 class="arsenal-title">ENGINES &amp; TOOLS</h3>
+                        </div>
+                        <ul class="skill-list">
+                            <li class="skill-item">
+                                <div class="skill-info">
+                                    <span>GODOT ENGINE 4 &amp; 3</span>
+                                    <span class="skill-pct">90%</span>
+                                </div>
+                                <div class="skill-meter"><div class="skill-fill" style="width: 90%;"></div></div>
+                            </li>
+                            <li class="skill-item">
+                                <div class="skill-info">
+                                    <span>GIT &amp; GITHUB</span>
+                                    <span class="skill-pct">88%</span>
+                                </div>
+                                <div class="skill-meter"><div class="skill-fill" style="width: 88%;"></div></div>
+                            </li>
+                            <li class="skill-item">
+                                <div class="skill-info">
+                                    <span>OPENGL &amp; SHADERS</span>
+                                    <span class="skill-pct">75%</span>
+                                </div>
+                                <div class="skill-meter"><div class="skill-fill" style="width: 75%;"></div></div>
+                            </li>
+                            <li class="skill-item">
+                                <div class="skill-info">
+                                    <span>VS CODE / LINUX</span>
+                                    <span class="skill-pct">85%</span>
+                                </div>
+                                <div class="skill-meter"><div class="skill-fill" style="width: 85%;"></div></div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Card 2: Programming Languages -->
+                    <div class="arsenal-card">
+                        <div class="arsenal-icon-header">
+                            <div class="arsenal-icon">💻</div>
+                            <h3 class="arsenal-title">RUNES &amp; LORE</h3>
+                        </div>
+                        <ul class="skill-list">
+                            <li class="skill-item">
+                                <div class="skill-info">
+                                    <span>GDSCRIPT</span>
+                                    <span class="skill-pct">92%</span>
+                                </div>
+                                <div class="skill-meter"><div class="skill-fill" style="width: 92%;"></div></div>
+                            </li>
+                            <li class="skill-item">
+                                <div class="skill-info">
+                                    <span>C++</span>
+                                    <span class="skill-pct">82%</span>
+                                </div>
+                                <div class="skill-meter"><div class="skill-fill" style="width: 82%;"></div></div>
+                            </li>
+                            <li class="skill-item">
+                                <div class="skill-info">
+                                    <span>PYTHON</span>
+                                    <span class="skill-pct">85%</span>
+                                </div>
+                                <div class="skill-meter"><div class="skill-fill" style="width: 85%;"></div></div>
+                            </li>
+                            <li class="skill-item">
+                                <div class="skill-info">
+                                    <span>C / JAVA</span>
+                                    <span class="skill-pct">78%</span>
+                                </div>
+                                <div class="skill-meter"><div class="skill-fill" style="width: 78%;"></div></div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Card 3: Game Dev Disciplines -->
+                    <div class="arsenal-card">
+                        <div class="arsenal-icon-header">
+                            <div class="arsenal-icon">🎯</div>
+                            <h3 class="arsenal-title">GAME DISCIPLINES</h3>
+                        </div>
+                        <ul class="skill-list">
+                            <li class="skill-item">
+                                <div class="skill-info">
+                                    <span>GAME MECHANICS DESIGN</span>
+                                    <span class="skill-pct">90%</span>
+                                </div>
+                                <div class="skill-meter"><div class="skill-fill" style="width: 90%;"></div></div>
+                            </li>
+                            <li class="skill-item">
+                                <div class="skill-info">
+                                    <span>2D &amp; 3D GAME PHYSICS</span>
+                                    <span class="skill-pct">86%</span>
+                                </div>
+                                <div class="skill-meter"><div class="skill-fill" style="width: 86%;"></div></div>
+                            </li>
+                            <li class="skill-item">
+                                <div class="skill-info">
+                                    <span>ISOMETRIC &amp; LEVEL DESIGN</span>
+                                    <span class="skill-pct">80%</span>
+                                </div>
+                                <div class="skill-meter"><div class="skill-fill" style="width: 80%;"></div></div>
+                            </li>
+                            <li class="skill-item">
+                                <div class="skill-info">
+                                    <span>3D SOUND DESIGN</span>
+                                    <span class="skill-pct">82%</span>
+                                </div>
+                                <div class="skill-meter"><div class="skill-fill" style="width: 82%;"></div></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================================================
+             JOURNEY / QUEST LOG
+             =================================================== -->
+        <section id="journey" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-pretitle">// QUEST LOG</span>
+                    <h2 class="section-title">JOURNEY &amp; MILESTONES</h2>
+                    <p class="section-description">
+                        Academic background, organizational missions, and milestones achieved on the game development path.
+                    </p>
+                </div>
+
+                <div class="timeline">
+                    <!-- Quest 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-node">★</div>
+                        <div class="timeline-card">
+                            <div class="timeline-meta">
+                                <span class="timeline-role">VERTEX MEMBER</span>
+                                <span class="timeline-date">OCT 2025 — PRESENT</span>
+                            </div>
+                            <div class="timeline-org">VERTEX GDNA • PUNE, ALANDI</div>
+                            <p class="timeline-desc">
+                                Core technical member utilizing data analytics and technical solutions to address member needs. Collaborating in multi-disciplinary team environments to streamline operations.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Quest 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-node">★</div>
+                        <div class="timeline-card">
+                            <div class="timeline-meta">
+                                <span class="timeline-role">B.TECH IN COMPUTER SCIENCE</span>
+                                <span class="timeline-date">AUG 2024 — EXPECTED 2028</span>
+                            </div>
+                            <div class="timeline-org">MIT ACADEMY OF ENGINEERING, PUNE</div>
+                            <p class="timeline-desc">
+                                Specializing in Computer Science with a focus on Algorithms, Data Structures, Computer Graphics, Software Engineering, and Object-Oriented Architecture.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Quest 3 -->
+                    <div class="timeline-item">
+                        <div class="timeline-node">★</div>
+                        <div class="timeline-card">
+                            <div class="timeline-meta">
+                                <span class="timeline-role">GODOT &amp; GAME DEV ODYSSEY</span>
+                                <span class="timeline-date">INDEPENDENT MILESTONES</span>
+                            </div>
+                            <div class="timeline-org">ITCH.IO &amp; GITHUB REPOSITORIES</div>
+                            <p class="timeline-desc">
+                                Progressed from Brackeys platformer foundations to advanced vehicle physics, OpenGL shaders, and published releases on Itch.io.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================================================
+             ABOUT DEVELOPER PROFILE
+             =================================================== -->
+        <section id="about" class="section" style="background: rgba(0, 0, 0, 0.4);">
+            <div class="container">
+                <div class="about-box">
+                    <div class="about-text">
+                        <span class="section-pretitle">// CHARACTER BIO</span>
+                        <h3>CRAFTING "GAME FEEL" THROUGH CODE</h3>
+                        <p>
+                            I'm Tarun Sharma, a Computer Science student and gameplay programmer based in Pune, India. My passion for game development centers on the harmony of physics, math, and responsive tactile controls: making jumps feel snappy, tuning suspension dampeners on a low-poly vehicle, or designing atmospheric line-of-sight lighting.
+                        </p>
+                        <p>
+                            I build primarily using <strong>Godot Engine</strong> (leveraging GDScript and C++) alongside <strong>OpenGL</strong> graphics programming.
+                        </p>
+
+                        <div class="about-highlights">
+                            <div class="highlight-item">
+                                <span class="highlight-icon">🎯</span>
+                                <div>
+                                    <strong>GAME PHYSICS &amp; FEEL:</strong>
+                                    <span>Deep focus on 2D/3D physics, kinematic controllers, suspension simulation, and kinetic impact juice.</span>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <span class="highlight-icon">⚡</span>
+                                <div>
+                                    <strong>RAPID GAME PROTOTYPING:</strong>
+                                    <span>Demonstrated ability to take ideas from mechanics whiteboard to playable Itch.io builds.</span>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <span class="highlight-icon">🤝</span>
+                                <div>
+                                    <strong>TEAM &amp; SOLO WORKFLOWS:</strong>
+                                    <span>Experience with Git version control, vertex community analytics, and collaborative repositories.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="certificates-card">
+                        <h4>VERIFIED CREDENTIALS</h4>
+                        <p>Inspect my full collection of academic, technical, and extracurricular certificates stored on Google Drive.</p>
+                        <a href="https://drive.google.com/drive/folders/1z7UPyrfs1c--D-n5zTAiX1rA18s_Jn0b?usp=drive_link" target="_blank" rel="noopener noreferrer" class="btn-pixel-primary" style="margin-bottom: 14px; font-size: 0.65rem; justify-content: center;">
+                            📁 CERTIFICATES DRIVE
+                        </a>
+                        <a href="Tarun_Sharma.pdf" target="_blank" class="btn-pixel-secondary" style="font-size: 0.65rem; justify-content: center;">
+                            📜 DOWNLOAD RESUME PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================================================
+             CONTACT & TRANSMISSION
+             =================================================== -->
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-pretitle">// TRANSMISSION HUD</span>
+                    <h2 class="section-title">CONNECT &amp; COLLABORATE</h2>
+                    <p class="section-description">
+                        Seeking an enthusiastic Game Development intern or a gameplay programmer for your next title? Send a transmission!
+                    </p>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Beacons -->
+                    <div class="beacons-card">
+                        <h3>DIRECT BEACONS</h3>
+                        <div class="beacon-links">
+                            <!-- itch.io -->
+                            <a href="https://tarun114141.itch.io" target="_blank" rel="noopener noreferrer" class="beacon-link">
+                                <div class="beacon-icon">⚡</div>
+                                <div class="beacon-content">
+                                    <span class="beacon-title">ITCH.IO PROFILE</span>
+                                    <span class="beacon-handle">tarun114141.itch.io</span>
+                                </div>
+                            </a>
+
+                            <!-- GitHub -->
+                            <a href="https://github.com/tarun114141" target="_blank" rel="noopener noreferrer" class="beacon-link">
+                                <div class="beacon-icon">💻</div>
+                                <div class="beacon-content">
+                                    <span class="beacon-title">GITHUB REPOSITORIES</span>
+                                    <span class="beacon-handle">github.com/tarun114141</span>
+                                </div>
+                            </a>
+
+                            <!-- LinkedIn -->
+                            <a href="https://linkedin.com/in/tarun-sharma" target="_blank" rel="noopener noreferrer" class="beacon-link">
+                                <div class="beacon-icon">🌐</div>
+                                <div class="beacon-content">
+                                    <span class="beacon-title">LINKEDIN NETWORK</span>
+                                    <span class="beacon-handle">linkedin.com/in/tarun-sharma</span>
+                                </div>
+                            </a>
+
+                            <!-- Email -->
+                            <div class="beacon-link" style="cursor: default;">
+                                <div class="beacon-icon">✉️</div>
+                                <div class="beacon-content">
+                                    <span class="beacon-title">OFFICIAL EMAIL</span>
+                                    <span class="beacon-handle">202401040033@mitaoe.ac.in</span>
+                                </div>
+                                <button class="copy-btn" data-copy="202401040033@mitaoe.ac.in" title="Copy Email">COPY</button>
+                            </div>
+
+                            <!-- Phone -->
+                            <div class="beacon-link" style="cursor: default;">
+                                <div class="beacon-icon">📱</div>
+                                <div class="beacon-content">
+                                    <span class="beacon-title">PHONE CONTACT</span>
+                                    <span class="beacon-handle">+91 8494082756</span>
+                                </div>
+                                <button class="copy-btn" data-copy="+918494082756" title="Copy Phone">COPY</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Dispatch Form -->
+                    <div class="contact-form-card">
+                        <h3>SEND TRANSMISSION</h3>
+                        <form id="contact-form" action="mailto:202401040033@mitaoe.ac.in" method="POST" enctype="text/plain">
+                            <div class="form-group">
+                                <label for="name">> SENDER NAME / STUDIO</label>
+                                <input type="text" id="name" name="name" class="form-control" placeholder="Indie Studio / Recruiter" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">> CONTACT EMAIL</label>
+                                <input type="email" id="email" name="email" class="form-control" placeholder="recruiter@studio.com" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">> TRANSMISSION MESSAGE</label>
+                                <textarea id="message" name="message" class="form-control" rows="4" placeholder="Hello Tarun, we checked out your Godot games and..." required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn-pixel-primary" style="width: 100%; justify-content: center;">
+                                <span>🚀 DISPATCH TRANSMISSION</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================================================
+             PIXEL FOOTER
+             =================================================== -->
+        <footer class="hud-footer">
+            <div class="container">
+                <div class="footer-inner">
+                    <div class="footer-left">
+                        <span class="blinking-star">★</span>
+                        <span>TARUN SHARMA // GAME DEVELOPER PORTFOLIO // 2026</span>
+                    </div>
+                    <div>
+                        <span>[PRESS START TO PLAY] • CRAFTED FOR GAME DEV</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
 
+    <!-- Retro Notification Toast -->
+    <div id="toast"></div>
+
+    <script src="main.js"></script>
 </body>
 </html>
